@@ -1,0 +1,90 @@
+.falla{
+	.table-falla{
+		width: 700px;
+		margin: 20px;
+		td{
+			padding: 10px;
+			vertical-align: middle;
+			.explicacion {
+				.negativo{
+					margin: 10px 0px 0px;
+				}
+				.positivo{
+					margin: 10px 0px 0px;
+					display: none;	
+				}
+			}
+			&:first-child{
+				width: 300px;
+			}
+		}
+		.checkbox{
+			padding: 0px;
+			.bootstrap-switch.bootstrap-switch-large{
+				min-width: 160px;
+			}
+		}
+	}
+	.cancelar{
+		margin-left: 580px;
+		margin-top: 8px;
+	}
+}
+.comentar{
+	.panel-gris{
+		margin: 10px 0px;
+		text-decoration: none;
+		h5, h4{
+			color: @azul;
+		}
+		.info{
+			overflow: hidden;
+			text-align: center;
+			p{
+				font-size: 10px;
+				font-style: italic;;
+				color: @gris-texto;
+			}
+		}
+		.descripcion{
+			padding-left: 10px;
+			text-align: justify;
+			p{
+				color: #000000;
+			}
+		}
+		.formulario-comentar{
+			width: 100%;
+			textarea{
+				margin-bottom: 10px;
+				resize: none; 
+				height: 35px;
+			}
+		}
+		.ver-taller{
+			position: absolute;
+			bottom: 20px;
+			right: 20px;
+		}
+	}
+	.categoria{
+		position: absolute;
+		right: 60px;
+		top: 60px;
+		background-color: @azul;
+		color: @celeste;
+		padding: 0px 5px;
+		border-radius: 4px 4px 4px 4px;
+	}
+	.tipo-comentario{
+		position: absolute;
+		top: 40px;
+		right: 20px;
+		height: 40px;
+		padding-top: 20px;
+		font-size: 16px;
+	}
+	.alert{
+		margin: 0px;
+	}
+}

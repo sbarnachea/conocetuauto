@@ -1,0 +1,559 @@
+2015-04-28 22:04:44 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [1045] Access denied for user \'root\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(3498): ConnectionManager::getDataSource('default')
+#3 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(1136): Model->setDataSource('default')
+#4 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(3525): Model->setSource('valoraciones')
+#5 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(1365): Model->getDataSource()
+#6 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(1457): Model->schema()
+#7 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/app/Model/Behavior/SoftDeleteBehavior.php(54): Model->hasField('deleted')
+#8 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/BehaviorCollection.php(145): SoftDeleteBehavior->setup(Object(Valoracion), Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/BehaviorCollection.php(66): BehaviorCollection->load('SoftDelete', Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(755): BehaviorCollection->init('Valoracion', Array)
+#11 [internal function]: Model->__construct(Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Utility/ClassRegistry.php(169): ReflectionClass->newInstance(Array)
+#13 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Controller/Controller.php(738): ClassRegistry::init(Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/app/Controller/HomeController.php(5): Controller->loadModel('Valoracion')
+#15 [internal function]: HomeController->index()
+#16 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(HomeController), Array)
+#17 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#18 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest))
+#19 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#20 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/index.php(41): require('/Applications/X...')
+#21 {main}
+2015-04-28 22:21:15 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [1045] Access denied for user \'cake-cta\'@\'localhost\' (using password: YES)',
+  'enabled' => true,
+)
+Request URL: /
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(3498): ConnectionManager::getDataSource('default')
+#3 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(1136): Model->setDataSource('default')
+#4 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(3525): Model->setSource('valoraciones')
+#5 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(1365): Model->getDataSource()
+#6 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(1457): Model->schema()
+#7 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/app/Model/Behavior/SoftDeleteBehavior.php(54): Model->hasField('deleted')
+#8 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/BehaviorCollection.php(145): SoftDeleteBehavior->setup(Object(Valoracion), Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/BehaviorCollection.php(66): BehaviorCollection->load('SoftDelete', Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(755): BehaviorCollection->init('Valoracion', Array)
+#11 [internal function]: Model->__construct(Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Utility/ClassRegistry.php(169): ReflectionClass->newInstance(Array)
+#13 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Controller/Controller.php(738): ClassRegistry::init(Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/app/Controller/HomeController.php(5): Controller->loadModel('Valoracion')
+#15 [internal function]: HomeController->index()
+#16 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(HomeController), Array)
+#17 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#18 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest))
+#19 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#20 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/index.php(41): require('/Applications/X...')
+#21 {main}
+2015-04-29 12:52:34 Error: [MissingControllerException] Controller class PruebaController could not be found.
+Exception Attributes: array (
+  'class' => 'PruebaController',
+  'plugin' => NULL,
+)
+Request URL: /prueba
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2015-04-30 21:31:21 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] No such file or directory',
+  'enabled' => true,
+)
+Request URL: /Proyectos/apps/conocetuauto/
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(3498): ConnectionManager::getDataSource('default')
+#3 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(1136): Model->setDataSource('default')
+#4 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(3525): Model->setSource('valoraciones')
+#5 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(1365): Model->getDataSource()
+#6 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(1457): Model->schema()
+#7 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/app/Model/Behavior/SoftDeleteBehavior.php(54): Model->hasField('deleted')
+#8 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/BehaviorCollection.php(145): SoftDeleteBehavior->setup(Object(Valoracion), Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/BehaviorCollection.php(66): BehaviorCollection->load('SoftDelete', Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(755): BehaviorCollection->init('Valoracion', Array)
+#11 [internal function]: Model->__construct(Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Utility/ClassRegistry.php(169): ReflectionClass->newInstance(Array)
+#13 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Controller/Controller.php(738): ClassRegistry::init(Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/app/Controller/HomeController.php(5): Controller->loadModel('Valoracion')
+#15 [internal function]: HomeController->index()
+#16 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(HomeController), Array)
+#17 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#18 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest))
+#19 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#20 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/index.php(41): require('/Applications/X...')
+#21 {main}
+2015-05-28 11:16:59 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] No such file or directory',
+  'enabled' => true,
+)
+Request URL: /conocetuauto/
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(3498): ConnectionManager::getDataSource('default')
+#3 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(1136): Model->setDataSource('default')
+#4 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(3525): Model->setSource('valoraciones')
+#5 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(1365): Model->getDataSource()
+#6 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(1457): Model->schema()
+#7 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/app/Model/Behavior/SoftDeleteBehavior.php(54): Model->hasField('deleted')
+#8 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/BehaviorCollection.php(145): SoftDeleteBehavior->setup(Object(Valoracion), Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/BehaviorCollection.php(66): BehaviorCollection->load('SoftDelete', Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(755): BehaviorCollection->init('Valoracion', Array)
+#11 [internal function]: Model->__construct(Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Utility/ClassRegistry.php(169): ReflectionClass->newInstance(Array)
+#13 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Controller/Controller.php(738): ClassRegistry::init(Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/app/Controller/HomeController.php(5): Controller->loadModel('Valoracion')
+#15 [internal function]: HomeController->index()
+#16 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(HomeController), Array)
+#17 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#18 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest))
+#19 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#20 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/index.php(41): require('/Applications/X...')
+#21 {main}
+2015-05-28 15:58:23 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[28000] [1045] Access denied for user \'root\'@\'localhost\' (using password: NO)',
+  'enabled' => true,
+)
+Request URL: /conocetuauto/
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(3498): ConnectionManager::getDataSource('default')
+#3 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(1136): Model->setDataSource('default')
+#4 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(3525): Model->setSource('valoraciones')
+#5 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(1365): Model->getDataSource()
+#6 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(1457): Model->schema()
+#7 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/app/Model/Behavior/SoftDeleteBehavior.php(54): Model->hasField('deleted')
+#8 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/BehaviorCollection.php(145): SoftDeleteBehavior->setup(Object(Valoracion), Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/BehaviorCollection.php(66): BehaviorCollection->load('SoftDelete', Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(755): BehaviorCollection->init('Valoracion', Array)
+#11 [internal function]: Model->__construct(Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Utility/ClassRegistry.php(169): ReflectionClass->newInstance(Array)
+#13 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Controller/Controller.php(738): ClassRegistry::init(Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/app/Controller/HomeController.php(5): Controller->loadModel('Valoracion')
+#15 [internal function]: HomeController->index()
+#16 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(HomeController), Array)
+#17 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#18 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest))
+#19 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#20 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/index.php(41): require('/Applications/X...')
+#21 {main}
+2015-05-28 15:59:04 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[42000] [1049] Unknown database \'estadisticas\'',
+  'enabled' => true,
+)
+Request URL: /conocetuauto/
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(3498): ConnectionManager::getDataSource('default')
+#3 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(1136): Model->setDataSource('default')
+#4 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(3525): Model->setSource('valoraciones')
+#5 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(1365): Model->getDataSource()
+#6 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(1457): Model->schema()
+#7 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/app/Model/Behavior/SoftDeleteBehavior.php(54): Model->hasField('deleted')
+#8 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/BehaviorCollection.php(145): SoftDeleteBehavior->setup(Object(Valoracion), Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/BehaviorCollection.php(66): BehaviorCollection->load('SoftDelete', Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(755): BehaviorCollection->init('Valoracion', Array)
+#11 [internal function]: Model->__construct(Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Utility/ClassRegistry.php(169): ReflectionClass->newInstance(Array)
+#13 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Controller/Controller.php(738): ClassRegistry::init(Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/app/Controller/HomeController.php(5): Controller->loadModel('Valoracion')
+#15 [internal function]: HomeController->index()
+#16 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(HomeController), Array)
+#17 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#18 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest))
+#19 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#20 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/index.php(41): require('/Applications/X...')
+#21 {main}
+2015-05-28 16:02:41 Error: [MissingTableException] Table valoraciones for model Valoracion was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'valoraciones',
+  'class' => 'Valoracion',
+  'ds' => 'default',
+)
+Request URL: /conocetuauto/
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(3525): Model->setSource('valoraciones')
+#1 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(1365): Model->getDataSource()
+#2 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(1457): Model->schema()
+#3 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/app/Model/Behavior/SoftDeleteBehavior.php(54): Model->hasField('deleted')
+#4 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/BehaviorCollection.php(145): SoftDeleteBehavior->setup(Object(Valoracion), Array)
+#5 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/BehaviorCollection.php(66): BehaviorCollection->load('SoftDelete', Array)
+#6 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(755): BehaviorCollection->init('Valoracion', Array)
+#7 [internal function]: Model->__construct(Array)
+#8 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Utility/ClassRegistry.php(169): ReflectionClass->newInstance(Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Controller/Controller.php(738): ClassRegistry::init(Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/app/Controller/HomeController.php(5): Controller->loadModel('Valoracion')
+#11 [internal function]: HomeController->index()
+#12 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(HomeController), Array)
+#13 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#14 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest))
+#15 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#16 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/index.php(41): require('/Applications/X...')
+#17 {main}
+2015-05-30 15:18:17 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] No such file or directory',
+  'enabled' => true,
+)
+Request URL: /
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(3498): ConnectionManager::getDataSource('default')
+#3 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(1136): Model->setDataSource('default')
+#4 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(3525): Model->setSource('valoraciones')
+#5 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(1365): Model->getDataSource()
+#6 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(1457): Model->schema()
+#7 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/app/Model/Behavior/SoftDeleteBehavior.php(54): Model->hasField('deleted')
+#8 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/BehaviorCollection.php(145): SoftDeleteBehavior->setup(Object(Valoracion), Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/BehaviorCollection.php(66): BehaviorCollection->load('SoftDelete', Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(755): BehaviorCollection->init('Valoracion', Array)
+#11 [internal function]: Model->__construct(Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Utility/ClassRegistry.php(169): ReflectionClass->newInstance(Array)
+#13 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Controller/Controller.php(738): ClassRegistry::init(Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/app/Controller/HomeController.php(5): Controller->loadModel('Valoracion')
+#15 [internal function]: HomeController->index()
+#16 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(HomeController), Array)
+#17 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#18 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest))
+#19 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#20 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/index.php(41): require('/Applications/X...')
+#21 {main}
+2015-05-30 15:32:40 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] No such file or directory',
+  'enabled' => true,
+)
+Request URL: /Proyectos/apps/conocetuauto/
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(3498): ConnectionManager::getDataSource('default')
+#3 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(1136): Model->setDataSource('default')
+#4 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(3525): Model->setSource('valoraciones')
+#5 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(1365): Model->getDataSource()
+#6 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(1457): Model->schema()
+#7 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/app/Model/Behavior/SoftDeleteBehavior.php(54): Model->hasField('deleted')
+#8 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/BehaviorCollection.php(145): SoftDeleteBehavior->setup(Object(Valoracion), Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/BehaviorCollection.php(66): BehaviorCollection->load('SoftDelete', Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(755): BehaviorCollection->init('Valoracion', Array)
+#11 [internal function]: Model->__construct(Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Utility/ClassRegistry.php(169): ReflectionClass->newInstance(Array)
+#13 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Controller/Controller.php(738): ClassRegistry::init(Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/app/Controller/HomeController.php(5): Controller->loadModel('Valoracion')
+#15 [internal function]: HomeController->index()
+#16 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(HomeController), Array)
+#17 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#18 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest))
+#19 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#20 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/index.php(41): require('/Applications/X...')
+#21 {main}
+2015-05-30 15:33:20 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] No such file or directory',
+  'enabled' => true,
+)
+Request URL: /
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(3498): ConnectionManager::getDataSource('default')
+#3 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(1136): Model->setDataSource('default')
+#4 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(3525): Model->setSource('valoraciones')
+#5 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(1365): Model->getDataSource()
+#6 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(1457): Model->schema()
+#7 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/app/Model/Behavior/SoftDeleteBehavior.php(54): Model->hasField('deleted')
+#8 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/BehaviorCollection.php(145): SoftDeleteBehavior->setup(Object(Valoracion), Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/BehaviorCollection.php(66): BehaviorCollection->load('SoftDelete', Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(755): BehaviorCollection->init('Valoracion', Array)
+#11 [internal function]: Model->__construct(Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Utility/ClassRegistry.php(169): ReflectionClass->newInstance(Array)
+#13 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Controller/Controller.php(738): ClassRegistry::init(Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/app/Controller/HomeController.php(5): Controller->loadModel('Valoracion')
+#15 [internal function]: HomeController->index()
+#16 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(HomeController), Array)
+#17 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#18 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest))
+#19 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#20 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/index.php(41): require('/Applications/X...')
+#21 {main}
+2015-05-30 15:33:23 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] No such file or directory',
+  'enabled' => true,
+)
+Request URL: /login
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(3498): ConnectionManager::getDataSource('default')
+#3 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(1136): Model->setDataSource('default')
+#4 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(3525): Model->setSource('users')
+#5 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(1365): Model->getDataSource()
+#6 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(1457): Model->schema()
+#7 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/app/Model/Behavior/SoftDeleteBehavior.php(54): Model->hasField('deleted')
+#8 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/BehaviorCollection.php(145): SoftDeleteBehavior->setup(Object(User), Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/BehaviorCollection.php(66): BehaviorCollection->load('SoftDelete', Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(755): BehaviorCollection->init('User', Array)
+#11 [internal function]: Model->__construct(Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Utility/ClassRegistry.php(169): ReflectionClass->newInstance(Array)
+#13 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/View/Helper/FormHelper.php(164): ClassRegistry::init(Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/View/Helper/FormHelper.php(204): FormHelper->_getModel('User')
+#15 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/View/Helper/FormHelper.php(354): FormHelper->_introspectModel('User', 'key')
+#16 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/app/View/Users/login.ctp(17): FormHelper->create(NULL, Array)
+#17 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/View/View.php(948): include('/Applications/X...')
+#18 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/View/View.php(910): View->_evaluate('/Applications/X...', Array)
+#19 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/View/View.php(471): View->_render('/Applications/X...')
+#20 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#21 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#22 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#23 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#24 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/index.php(41): require('/Applications/X...')
+#25 {main}
+2015-05-30 15:37:46 Error: [MissingConnectionException] Database connection "Mysql" is missing, or could not be created.
+Exception Attributes: array (
+  'class' => 'Mysql',
+  'message' => 'SQLSTATE[HY000] [2002] No such file or directory',
+  'enabled' => true,
+)
+Request URL: /
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Datasource/DboSource.php(260): Mysql->connect()
+#1 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/ConnectionManager.php(105): DboSource->__construct(Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(3498): ConnectionManager::getDataSource('default')
+#3 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(1136): Model->setDataSource('default')
+#4 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(3525): Model->setSource('valoraciones')
+#5 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(1365): Model->getDataSource()
+#6 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(1457): Model->schema()
+#7 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/app/Model/Behavior/SoftDeleteBehavior.php(54): Model->hasField('deleted')
+#8 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/BehaviorCollection.php(145): SoftDeleteBehavior->setup(Object(Valoracion), Array)
+#9 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/BehaviorCollection.php(66): BehaviorCollection->load('SoftDelete', Array)
+#10 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(755): BehaviorCollection->init('Valoracion', Array)
+#11 [internal function]: Model->__construct(Array)
+#12 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Utility/ClassRegistry.php(169): ReflectionClass->newInstance(Array)
+#13 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Controller/Controller.php(738): ClassRegistry::init(Array)
+#14 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/app/Controller/HomeController.php(5): Controller->loadModel('Valoracion')
+#15 [internal function]: HomeController->index()
+#16 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(HomeController), Array)
+#17 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#18 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(HomeController), Object(CakeRequest))
+#19 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#20 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/index.php(41): require('/Applications/X...')
+#21 {main}
+2015-06-01 18:38:10 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'cambiar_pass' doesn't have a default value
+Request URL: /registro?q=%2Fregistro
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `es...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `es...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(1850): DboSource->create(Object(User), Array, Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/app/Controller/UsersController.php(102): Model->save(Array)
+#5 [internal function]: UsersController->add()
+#6 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/index.php(41): require('/Applications/X...')
+#11 {main}
+2015-06-01 18:40:18 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'deleted' doesn't have a default value
+Request URL: /registro?q=%2Fregistro
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `es...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `es...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(1850): DboSource->create(Object(User), Array, Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/app/Controller/UsersController.php(103): Model->save(Array)
+#5 [internal function]: UsersController->add()
+#6 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/index.php(41): require('/Applications/X...')
+#11 {main}
+2015-06-01 18:40:45 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'estado' doesn't have a default value
+Request URL: /registro?q=%2Fregistro
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `es...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `es...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(1850): DboSource->create(Object(Correo), Array, Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/app/Controller/UsersController.php(109): Model->save(Array)
+#5 [internal function]: UsersController->add()
+#6 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/index.php(41): require('/Applications/X...')
+#11 {main}
+2015-06-01 18:41:32 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /favicon.ico?q=%2Ffavicon.ico
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/index.php(41): require('/Applications/X...')
+#2 {main}
+2015-06-01 18:41:35 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /favicon.ico?q=%2Ffavicon.ico
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/index.php(41): require('/Applications/X...')
+#2 {main}
+2015-06-01 18:41:40 Error: [MissingControllerException] Controller class LogoutController could not be found.
+Exception Attributes: array (
+  'class' => 'LogoutController',
+  'plugin' => NULL,
+)
+Request URL: /logout?q=%2Flogout
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/index.php(41): require('/Applications/X...')
+#2 {main}
+2015-06-01 18:41:40 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /favicon.ico?q=%2Ffavicon.ico
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/index.php(41): require('/Applications/X...')
+#2 {main}
+2015-06-01 18:41:47 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /favicon.ico?q=%2Ffavicon.ico
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/index.php(41): require('/Applications/X...')
+#2 {main}
+2015-06-01 18:42:31 Error: [PDOException] SQLSTATE[HY000]: General error: 1364 Field 'deleted' doesn't have a default value
+Request URL: /registro?q=%2Fregistro
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `es...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `es...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(1850): DboSource->create(Object(Correo), Array, Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/app/Controller/UsersController.php(109): Model->save(Array)
+#5 [internal function]: UsersController->add()
+#6 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(UsersController), Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(UsersController), Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/index.php(41): require('/Applications/X...')
+#11 {main}
+2015-08-03 20:52:23 Error: [PDOException] SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'id_falla' cannot be null
+Request URL: /falla/denunciar/122?q=%2Ffalla%2Fdenunciar%2F122
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Datasource/DboSource.php(458): PDOStatement->execute(Array)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Datasource/DboSource.php(424): DboSource->_execute('INSERT INTO `es...', Array)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Datasource/DboSource.php(1012): DboSource->execute('INSERT INTO `es...')
+#3 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Model/Model.php(1850): DboSource->create(Object(DenunciaFalla), Array, Array)
+#4 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/app/Controller/FallaController.php(226): Model->save(Array)
+#5 [internal function]: FallaController->denunciar('122')
+#6 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Controller/Controller.php(490): ReflectionMethod->invokeArgs(Object(FallaController), Array)
+#7 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#8 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(FallaController), Object(CakeRequest))
+#9 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#10 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/index.php(41): require('/Applications/X...')
+#11 {main}
+2015-08-03 20:52:23 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /favicon.ico?q=%2Ffavicon.ico
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/index.php(41): require('/Applications/X...')
+#2 {main}
+2015-08-03 20:52:46 Error: [MissingViewException] View file "/Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/app/View/Falla/denunciar.ctp" is missing.
+Exception Attributes: array (
+  'file' => '/Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/app/View/Falla/denunciar.ctp',
+)
+Request URL: /falla/denunciar/12/113/118?q=%2Ffalla%2Fdenunciar%2F12%2F113%2F118
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/View/View.php(468): View->_getViewFileName(NULL)
+#1 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Controller/Controller.php(954): View->render(NULL, NULL)
+#2 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Routing/Dispatcher.php(198): Controller->render()
+#3 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(FallaController), Object(CakeRequest))
+#4 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#5 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/index.php(41): require('/Applications/X...')
+#6 {main}
+2015-09-04 12:54:55 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /favicon.ico?q=%2Ffavicon.ico
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/index.php(41): require('/Applications/X...')
+#2 {main}
+2015-09-04 12:55:17 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /favicon.ico?q=%2Ffavicon.ico
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/index.php(41): require('/Applications/X...')
+#2 {main}
+2015-09-28 21:31:01 Error: [MissingControllerException] Controller class Favicon.icoController could not be found.
+Exception Attributes: array (
+  'class' => 'Favicon.icoController',
+  'plugin' => NULL,
+)
+Request URL: /favicon.ico?q=%2Ffavicon.ico
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/index.php(41): require('/Applications/X...')
+#2 {main}
+2015-09-28 21:37:09 Error: [MissingActionException] Action ModeloController::add() could not be found.
+Exception Attributes: array (
+  'controller' => 'ModeloController',
+  'action' => 'add',
+)
+Request URL: /modelo/add/23/319?q=%2Fmodelo%2Fadd%2F23%2F319
+Stack Trace:
+#0 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Routing/Dispatcher.php(191): Controller->invokeAction(Object(CakeRequest))
+#1 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/lib/Cake/Routing/Dispatcher.php(165): Dispatcher->_invoke(Object(ModeloController), Object(CakeRequest))
+#2 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/app/webroot/index.php(108): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#3 /Applications/XAMPP/xamppfiles/htdocs/Proyectos/apps/conocetuauto/index.php(41): require('/Applications/X...')
+#4 {main}

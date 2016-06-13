@@ -1,0 +1,167 @@
+.modelos{
+	margin-top: 40px;
+	.listado{
+		width: 100%;
+	}
+	.marca{
+		width: 100%;
+		img{
+			width: 170px;
+			margin: 40px auto;
+			display: block;
+		}
+	}
+	.item{
+		padding: 5px 20px 5px 70px;
+		width: 269px;
+		a{
+			color: @azul;
+			font-size: 16px;
+		}
+	} 
+}
+.modelo-falla {
+	margin-bottom: 50px;
+	p{
+		margin:20px 30px;
+	}
+	.fallas{
+		h3{
+			margin-bottom: 30px;
+		}
+		.item{
+			margin: 20px;
+			a{
+				width: 130px;
+			}
+			.content-bar{
+				position: relative;
+				width: 300px;
+				float: left;
+				.bar{
+					position: absolute;
+					height: 20px;
+					background: linear-gradient(to right,#1598ef 1%,#1598ef 12%,#0b6baa 100%);
+					border-radius: 0 3px 3px 0;
+					border: 1px solid #ccc;
+					border-color: rgba(0,0,0,.1)rgba(0,0,0,.1)rgba(0,0,0,.25);
+					color: #FFFFFF;
+					padding-left: 2px;
+				}
+			}
+		}
+	}
+}
+.modelo-detalle{
+	.bar{
+		color: @azul;
+		.panel-gris;
+		min-height: 335px;
+		width: 100%;
+		.comparte{
+			color: #000000;
+			margin-top: 50px;
+			text-align: center
+		}
+	}
+	.resumen{
+		width: 100%;
+		margin-top: 20px;
+		color: @azul;
+		.panel-gris;
+		ul{
+			list-style-type: circle;
+			padding-left: 40px;
+			span{
+				color: @azul;
+				font-size: 18px;
+			} 
+		}
+	}
+	.ano-vehiculo, .tipo-comentario-donut{
+		width: 100%;
+		margin-top: 20px;
+		color: @azul;
+		.panel-gris;
+	}
+}
+.nueva-falla{
+	width: 100%;
+	min-height: 200px;
+	text-align: center;
+	.panel-gris;
+	a{
+		margin: 0 auto;
+		width: 200px;
+		display: block;
+	}
+	h4{
+		text-align: center;
+		color: @azul;
+	}
+	p{
+		margin:20px 30px;
+	}
+}
+.pie{
+	margin-top: 20px;
+	canvas{
+		margin: 30px auto;
+		display: block;
+	}
+}
+.comentarios{
+	span{
+		padding-top: 25px;
+	}
+	a{
+		.panel-gris{
+			cursor: pointer;
+			margin: 10px 0px;
+			position: relative;
+			h5, h4{
+				color: @azul;
+			}
+			.info{
+				overflow: hidden;
+				text-align: center;
+				p{
+					font-size: 10px;
+					font-style: italic;
+					color: @gris-texto;
+				}
+			}
+			.descripcion{
+				padding-left: 10px;
+				text-align: justify;
+				position: relative;
+				max-height: 100px;
+				overflow: hidden;
+				p{
+					color: #000000;
+				}
+				span{
+					position: absolute;
+					right: 40px;
+					top: 0;
+					background-color: @azul;
+					color: @celeste;
+					padding: 0px 5px;
+					border-radius: 4px 4px 4px 4px;
+				}
+			}
+			.tipo-comentario{
+				position: absolute;
+				top: 0;
+				right: 20px;
+				font-size: 14px;
+			}
+			&:hover{
+				background-color: @gris-hover;
+			}
+			.numero-comentarios{
+				margin-left: 20px;
+			}
+		}
+	}
+}

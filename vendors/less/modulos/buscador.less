@@ -1,0 +1,82 @@
+form{
+	&.search-form{
+		margin: 0px 0px 20px;
+		padding: 0;
+		border: 1px solid #EEE;
+		width: 245px;
+		height: auto;
+		position: absolute;
+		top: -8px;
+		right: 20px;
+		input{
+			&.search-text {
+				font-size: 130%;
+				color: #8D8D8D;
+				-webkit-font-smoothing: antialiased;
+				font-family: sans-serif;
+				background-color: #FFF;
+				display: block;
+				width: 200px;
+				height: 20px;
+				padding: 20px 15px;
+				border: none;
+				float: left;
+				&::-webkit-input-placeholder{
+					color:#CCCCCC;
+					-webkit-transition: all 0.2s ease;
+					-ms-transition: all 0.2s ease;
+					-moz-transition: all 0.2s ease;
+					-o-transition: all 0.2s ease;
+					transition: all 0.2s ease;
+				}
+				&::-moz-placeholder{
+					color:#CCCCCC;
+					-webkit-transition: all 0.2s ease;
+					-ms-transition: all 0.2s ease;
+					-moz-transition: all 0.2s ease;
+					-o-transition: all 0.2s ease;
+					transition: all 0.2s ease;
+				}
+				&::-ms-input-placeholder{
+					color:#CCCCCC;
+					-webkit-transition: all 0.2s ease;
+					-ms-transition: all 0.2s ease;
+					-moz-transition: all 0.2s ease;
+					-o-transition: all 0.2s ease;
+					transition: all 0.2s ease;
+				}
+				&:focus::-webkit-input-placeholder {
+					color:transparent;
+				}
+				&:focus::-moz-placeholder {
+					color:transparent;
+				} 
+				&:focus:-moz-placeholder {
+					color:transparent;
+				}
+				&:focus::-ms-input-placeholder {
+					color:transparent;
+				}
+			}
+			&.search-submit {
+				display: block;
+				height: 40px;
+				width: 40px;
+				border: none;
+				background-color: #FFF;
+				background-image: url("../img/search-icon.png");
+				background-position: -15px;
+				float: left;
+				cursor: pointer;
+				-webkit-transition: all 0.2s ease;
+				-ms-transition: all 0.2s ease;
+				-moz-transition: all 0.2s ease;
+				-o-transition: all 0.2s ease;
+				transition: all 0.2s ease;
+				&:hover{
+					background-image: url("../img/search-icon-hover.png");
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,170 @@
+body {
+  font-family: 'Lato';
+}
+.fancybox-skin {
+  padding: 0px !important;
+}
+.wrapper {
+  width: 1170px;
+  padding: 0 15px;
+  margin: 0 auto;
+  position: relative;
+}
+.wrapper .alert-index {
+  margin-top: 10px;
+}
+.wrapper .contenido {
+  min-height: 430px;
+  margin-top: 30px;
+}
+.wrapper .contenido h3 {
+  color: #0e76bc;
+}
+.panel-gris {
+  padding: 20px;
+  background-color: #f7f7f9;
+  border-radius: 5px 5px 5px 5px;
+}
+.crumb {
+  background-color: #c2e7f8;
+  display: inline-block;
+  margin-top: 60px;
+  padding: 0px 10px;
+  border-radius: 4px;
+  width: 100%;
+}
+.crumb a {
+  color: #0e76bc;
+  margin: 5px 0px;
+  display: inline-block;
+}
+@media (max-width: 1024px) {
+  .wrapper {
+    width: 100%;
+    margin: 0;
+  }
+}
+.header .logo {
+  text-align: center;
+}
+.header .logo img {
+  width: 30%;
+  margin-top: 40px;
+}
+.header .logo p {
+  width: 585px;
+  margin: 10px auto 0;
+  text-align: justify;
+  font-size: 16px;
+}
+.header .logo h2 {
+  color: #0e76bc;
+  width: 582px;
+  margin: 0 auto;
+}
+.encuesta {
+  background-color: #0e76bc;
+  color: #c2e7f8;
+  height: 100%;
+  margin-top: 80px;
+}
+.encuesta .separator {
+  background-image: url('../img/section-gray-background.png');
+  background-repeat: no-repeat;
+  width: 1100px;
+  position: absolute;
+  top: -1px;
+  height: 25px;
+}
+.encuesta .table-falla {
+  width: 700px;
+  margin: 20px 20px 20px 268px;
+}
+.encuesta .table-falla td {
+  padding: 10px;
+  vertical-align: middle;
+}
+.encuesta .table-falla td .explicacion .negativo {
+  margin: 10px 0px 0px;
+}
+.encuesta .table-falla td .explicacion .positivo {
+  margin: 10px 0px 0px;
+  display: none;
+}
+.encuesta .table-falla td:first-child {
+  width: 300px;
+}
+.encuesta input.btn {
+  margin-right: 28px;
+}
+@media screen and (max-width: 1024px) {
+  .header .logo img {
+    width: 50%;
+  }
+  .encuesta {
+    margin: 80px 0 0 0;
+    height: 700px;
+  }
+  .encuesta .wrapper {
+    font-size: 20px;
+  }
+  .encuesta .wrapper .separator {
+    background-image: url('../img/section-mobile.png');
+    width: 50px;
+    margin: 0 auto;
+    position: relative;
+  }
+  .encuesta .wrapper form {
+    float: none !important;
+  }
+  .encuesta .wrapper form .table-falla {
+    width: 60%;
+    margin: 0 auto;
+  }
+  .encuesta .wrapper form .table-falla td {
+    text-align: center;
+  }
+  .encuesta .wrapper form .table-falla td:first-child {
+    display: none;
+  }
+  .encuesta .wrapper form .table-falla td .btn-group {
+    width: 50%;
+  }
+  .encuesta .wrapper form .table-falla td .btn-group .btn {
+    width: 50%;
+  }
+  .encuesta .wrapper form .submit {
+    width: 100%;
+  }
+  .encuesta .wrapper form .submit .btn {
+    width: 40%;
+    margin: 0 auto;
+    float: none !important;
+    display: block;
+    height: 50px;
+    font-size: 22px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .encuesta .wrapper form .table-falla {
+    width: 80%;
+  }
+  .encuesta .wrapper form .table-falla td .btn-group {
+    width: 80%;
+  }
+}
+@media screen and (max-width: 620px) {
+  .header .logo p,
+  .header .logo h2 {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  .encuesta .wrapper form .table-falla {
+    width: 100%;
+  }
+  .encuesta .wrapper form .submit .btn {
+    width: 60%;
+  }
+}

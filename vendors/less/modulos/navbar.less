@@ -1,0 +1,80 @@
+.navbar-menu{
+	background: rgba(14, 118, 188, 0.8);
+	width: 100%;
+	height: 50px;
+	position: fixed;
+	z-index: 10;
+	.social{
+		padding-top: 10px;
+		margin-left: 321px;
+		.item{
+			border-radius: 20px 20px 20px 20px;
+			background-color: @celeste;
+			width: 30px;
+			height: 30px;
+			margin-right: 10px;
+			color: @azul;
+			i{
+				font-size: 20px;
+				&.fa-facebook{
+					margin: 6px 0px 0px 9px;
+				}
+				&.fa-envelope{
+					margin: 4px 0px 0px 5px;
+				}
+				&.fa-twitter{
+					margin: 5px 0px 0px 6px;
+				}
+			}
+			&:hover{
+				background-color: @azul;
+				color: @celeste; 
+			}
+		}
+	}
+	.logo{
+		width: 200px;
+		float: left;
+		height: 20px;
+		img{
+			width: 120px
+		}
+	}
+	.acciones{
+		margin-top: 14px;
+		a{
+			color: @celeste;
+			text-transform: uppercase;
+			text-decoration: none;
+			margin-right: 10px;
+			&.btn-header{
+				background-color: @celeste;
+				color: @azul;
+				padding: 5px;
+				border-radius: 4px;
+				text-transform: uppercase;
+				font-weight: bold;
+				margin-right: 10px;
+				text-decoration: none;
+				position: relative;
+				font-size: 12px;
+			}
+		}
+		.dropdown-menu{
+			top: 50px;
+			background-color: @azul;
+			right: 26px;
+			a{
+				margin: 0;
+				&:hover{
+					background-color: @celeste;
+					color: @azul;
+				}
+			}
+		}
+		i{
+			margin: 0 5px;
+			font-size: 16px;
+		}
+	}
+}

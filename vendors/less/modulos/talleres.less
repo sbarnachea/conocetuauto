@@ -1,0 +1,57 @@
+.taller-listado{
+	a{	
+		text-decoration: none;
+		.cliente{
+			cursor: pointer;
+			margin: 5px;
+			h4{
+				color: @azul;
+			}
+			.estrellas{
+				i{
+					color: @azul;
+				}
+			}
+			&:hover{
+				background-color: @gris-hover;
+			}
+			img{
+				width: 200px;
+				height: 130px;
+			}
+		}		
+	}
+}
+.detalle-taller{
+	h3{
+		color: @azul;
+	}
+	.detalle{
+		img{
+			width: 185px;
+			height: 115px;
+		}
+		color: @azul;
+	}
+	.como-llegar{
+		margin-top: 20px;
+		color: @azul;
+		.mapa{
+			border-radius: 6px 6px 6px 6px;
+			border: 5px solid @azul;
+			overflow: hidden;
+		}
+	}
+	.valoracion{
+		height: 25px;
+		font-size: 25px;
+		width: 170px;
+		margin: 20px auto 0;
+		i{
+			cursor: pointer;
+			&.select, &.select-virtual{
+				color: @azul;
+			}
+		}
+	}
+}

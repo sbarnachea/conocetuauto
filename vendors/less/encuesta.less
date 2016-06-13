@@ -1,0 +1,156 @@
+@import "modulos/paleta";
+@import "modulos/general";
+
+.header{
+	.logo{
+		text-align: center;
+		img{
+			width: 30%;
+			margin-top: 40px;
+		}
+		p{
+			width: 585px;
+			margin: 10px auto 0;
+			text-align: justify;
+			font-size: 16px
+		}
+		h2{
+			color: @azul;
+			width: 582px;
+			margin: 0 auto;
+		}
+	}
+}
+.encuesta{
+	background-color: @azul;
+	color: @celeste;
+	height: 100%;
+	margin-top: 80px;
+	.separator{
+		background-image: url('../img/section-gray-background.png');
+		background-repeat: no-repeat;
+		width: 1100px;
+		position: absolute;
+		top: -1px;
+		height: 25px;
+	}
+	.table-falla{
+		width: 700px;
+		margin: 20px 20px 20px 268px;
+		td{
+			padding: 10px;
+			vertical-align: middle;
+			.explicacion {
+				.negativo{
+					margin: 10px 0px 0px;
+				}
+				.positivo{
+					margin: 10px 0px 0px;
+					display: none;	
+				}
+			}
+			&:first-child{
+				width: 300px;
+			}
+		}
+	}
+	input.btn{
+		margin-right: 28px;
+	}
+}
+@media screen and (max-width : 1024px){
+	.header{
+		.logo{
+			img{
+				width: 50%;
+			}
+		}
+	}
+	.encuesta{
+		margin: 80px 0 0 0;
+		height: 700px;
+		.wrapper{
+			font-size: 20px;
+			.separator{
+				background-image: url('../img/section-mobile.png');
+				width: 50px;
+				margin: 0 auto;
+				position: relative;
+			}
+			form{
+				float: none !important;
+				.table-falla{
+					width: 60%;
+					margin: 0 auto;
+					td{
+						text-align: center;
+						&:first-child{
+							display: none;
+						}
+						.btn-group{
+							width: 50%;
+							.btn{
+								width: 50%;
+							}
+						}
+					}
+				}
+				.submit{
+					width: 100%;
+					.btn{
+						width: 40%;
+						margin: 0 auto;
+						float: none !important;
+						display: block;
+						height: 50px;
+						font-size: 22px;
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width : 800px){
+	.encuesta{
+		.wrapper{
+			form{
+				.table-falla{
+					width: 80%;
+					td{
+						.btn-group{
+							width: 80%;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+@media screen and (max-width : 620px){
+	.header{
+		.logo{
+			p, h2{
+				width: 90%;
+				margin: 0 auto;
+			}
+		}
+	}
+}
+@media screen and (max-width : 480px){
+	.encuesta{
+		.wrapper{
+			form{
+				.table-falla{
+					width: 100%;
+				}
+				.submit{
+					.btn{
+						width: 60%;
+					}
+				}
+			}
+		}
+	}
+}
+
+
